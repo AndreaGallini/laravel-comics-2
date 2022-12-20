@@ -1,1 +1,241 @@
-@import '~bootstrap/scss/bootstrap'
+@import '~bootstrap/scss/bootstrap';
+
+$backgroundHeader:#0082F9;
+$backgrooundMain:#201621;
+$greytext:#848181;
+$footerBottom:#303030;
+
+.header_top{
+    width: 100%;
+    height: 50px;
+    background-color: $backgroundHeader;
+
+}
+.padding_left{
+    padding-left: 1rem;
+}
+.header_left{
+    img{
+        width: 50px;
+    }
+}
+.header_inner_top{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    height: 50px;
+}
+.header_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    .active {
+            color: $backgroundHeader !important;
+            border-bottom: 2px solid $backgroundHeader;
+        }
+        .my_link{
+            color: black;
+        }
+}
+
+.main{
+
+    padding-top: 3rem;
+    background-color: $backgrooundMain;
+    min-height: 200px;
+    padding-bottom: 3rem;
+}
+
+.jumbo {
+    background-image: url('../img/jumbotron.jpg');
+    min-height: 400px;
+    position: relative;
+}
+
+.current_series {
+    background-color: $backgroundHeader;
+    width: 220px;
+    height: 60px;
+    position: absolute;
+    bottom: -30px;
+    left: 350px;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+        color: white;
+        text-transform: uppercase;
+        font-weight: bolder;
+        font-size: 20px;
+        margin:0;
+    }
+}
+.card_text{
+    color:white;
+    text-transform: uppercase;
+}
+.my_btn{
+    color: white;
+    background-color: $backgroundHeader;
+    padding: 0.5rem 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    border:0;
+}
+
+.card_btn{
+    display: flex;
+    justify-content: center;
+}
+.bottom_main{
+    height: 200px;
+    background-color: $backgroundHeader;
+
+    img{
+        width: 50px;
+    }
+}
+.svg{
+    width: 50px;
+}
+.bottom_main_inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    p{
+        margin: 0;
+        padding-left: 1rem;
+    }
+}
+.my_card_bottom_main{
+    display: flex;
+    align-items: center;
+}
+.inner_footer{
+    min-height: 300px;
+    display: flex;
+        justify-content: space-between;
+        overflow: hidden;
+        position: relative;
+}
+.right {
+    flex-basis: 50%;
+
+    img {
+        position: absolute;
+        top: -100px;
+        overflow: hidden;
+    }
+}
+.left {
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: row;
+    p {
+            color: white;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin: 0.5rem 30px;
+            margin-top: 40px;
+        }
+                li {
+                    color: $greytext;
+                    text-transform: capitalize;
+                    margin-bottom: 0.3rem;
+                    list-style: none;
+                    cursor: pointer;
+
+                    &:hover {
+                        color: white;
+                    }
+                }
+
+                ul {
+                    margin: 0 30px;
+                    margin-bottom: 40px;
+                    padding: 0;
+                }
+}
+.outer_footer{
+    background-image: url('../img/footer-bg.jpg');
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-around;
+    height: 100px;
+    align-items: center;
+    background-color: $footerBottom;
+    z-index: 100;
+
+    img {
+        margin: 5px;
+    }
+        button {
+            width: 160px;
+            height: 50px;
+            background-color: transparent;
+            border: 3px solid $backgroundHeader;
+            text-transform: uppercase;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            &:hover {
+                background-color: $backgroundHeader;
+                color: white;
+            }
+        }
+}
+.destra {
+    display: flex;
+    align-items: center;
+}
+
+h2 {
+    text-transform: uppercase;
+    color: $backgroundHeader;
+    padding-right: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+
+    a{
+        text-decoration: none;
+        color: $greytext;
+
+    }
+
+
+.my_container{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+
+}
+.outer_contact{
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: center;
+    section{
+        width: 600px;
+        margin: 0 auto;
+    }
+    p{
+        margin-bottom: 0;
+        margin-top: 1rem;
+    }
+
+}
+label{
+    font-size: 15px;
+}
