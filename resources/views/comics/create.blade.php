@@ -1,46 +1,53 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container-fluid d-flex flex-column">
-        <form action="{{ route('comics.store') }}" method="POST">
-            @csrf
+    <h1 class="text-center">Inserisci nuovo Comic</h1>
+    <div class="row bg-white">
+        <div class="col-12">
+            <form action="{{ route('comics.store') }}" method="POST" class="p-4">
+                @csrf
+                <div class="mb-3">
+                    <label for="title" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="title" name="title" required>
+                </div>
+                <div class="mb-3">
+                    <label for="description" class="form-label">Descrizione</label>
+                    <textarea class="form-control" id="description" name="description"></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="thumb" class="form-label">Immagine</label>
+                    <input type="text" class="form-control" id="thumb" name="thumb" required>
+                </div>
+                <div class="mb-3">
+                    <label for="price" class="form-label">Prezzo</label>
+                    <input type="text" class="form-control" id="price" name="price" required>
+                </div>
 
-            <label for="titolo">Titolo</label>
-            <input type="text" name="title" id="titolo">
-            <label for="description">Descrizione</label>
-            <input type="text-area" name="description" id="description">
-            <label for="immagine">immagine</label>
-            <input type="text" name="thumb" id="immagine">
-            <label for="price">Prezzo</label>
-            <input type="text" name="price" id="price">
-            <label for="series">Series</label>
-            <input type="text" name="series" id="series">
-            <label for="sales_date">Data Vendita</label>
-            <input type="text" name="sales_date" id="sales_date">
-            <label for="type">Tipo</label>
-            <input type="text" name="type" id="type">
-            <label for="artists">Artista</label>
-            <input type="text" name="artists" id="artists">
-            <label for="writers">Scrittore</label>
-            <input type="text" name="writers" id="writers">
-            <button type="submit">Aggiungi</button>
-        </form>
-        <form action="{{ route('comics.store') }}" method="POST">
-            <div class="form-group">
-                <label for="title">Titolo</label>
-                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="Enter email">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Password</label>
-                <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-            </div>
-            <div class="form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            <button type="reset" class="btn btn-danger">Reset</button>
-        </form>
+                <div class="mb-3">
+                    <label for="series" class="form-label">Series</label>
+                    <input type="text" class="form-control" id="series" name="series" required>
+                </div>
+
+                <div class="mb-3">
+                    <label for="sales_date" class="form-label">Data vendita</label>
+                    <input type="text" class="form-control" id="sales_date" name="sales_date" required>
+                </div>
+                <div class="mb-3">
+                    <label for="type" class="form-label">Tipo</label>
+                    <input type="text" class="form-control" id="type" name="type" aria-describedby="cookingHelp"
+                        required>
+
+                </div>
+                <div class="mb-3">
+                    <label for="artists" class="form-label">Artista</label>
+                    <input type="text" class="form-control" id="artists" name="artists" required>
+                </div>
+                <div class="mb-3">
+                    <label for="writers" class="form-label">Scrittore</label>
+                    <input type="text" class="form-control" id="writers" name="writers" required>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+                <button type="reset" class="btn btn-primary">Reset</button>
+            </form>
+        </div>
     </div>
 @endsection

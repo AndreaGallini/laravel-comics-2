@@ -27,12 +27,12 @@
                                 href="{{ route('home') }}">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my_link {{ Route::currentRouteName() == 'movies' ? 'active' : '' }}"
-                                href="#">movies</a>
+                            <a class="nav-link my_link {{ Route::currentRouteName() == 'comics.create' ? 'active' : '' }}"
+                                href="{{ route('comics.create') }}">Aggiungi Comics</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link my_link {{ Route::currentRouteName() == 'tv' ? 'active' : '' }}"
-                                href="#">tv</a>
+                            <a class="nav-link my_link {{ Route::currentRouteName() == 'comics.index' ? 'active' : '' }}"
+                                href="{{ route('comics.index') }}">Lista Comics</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link my_link {{ Route::currentRouteName() == 'games' ? 'active' : '' }}"

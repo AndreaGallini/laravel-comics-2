@@ -1,6 +1,6 @@
 <footer>
-    <div class="outer_footer">
-        <div class="inner_footer container-lg">
+    <div class="outer_footer container-fluid">
+        <div class="inner_footer container-fluid">
             <div class="left">
                 <div>
                     <div>

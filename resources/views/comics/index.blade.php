@@ -15,6 +15,8 @@
                     <p>{{ $comic->sale_date }}</p>
                     <p>{{ $comic->artists }}</p>
                     <p>{{ $comic->writers }}</p>
+                    <button class="btn btn-primary"><a href="{{ route('comics.show', $comic->id) }}">Scopri di
+                            più!</a></button>
                 </div>
             @endforeach
         </div>
