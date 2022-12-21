@@ -13,11 +13,11 @@
                             più!</a></button>
                     <button class="btn btn-primary ms-3"><a
                             href="{{ route('comics.edit', $comic->id) }}">Modifica</a></button>
-                    <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
+                    {{-- <form action="{{ route('comics.destroy', $comic->id) }}" method="POST">
                         @csrf
-                        @method('DELETE')
-                        <button type="submit" class="btn btn-danger">Cancella</button>
-                    </form>
+                        @method('DELETE') --}}
+                    <button type="submit" class="  btn btn-danger">Cancella</button>
+                    {{-- </form> --}}
                 </div>
             @endforeach
         </div>
