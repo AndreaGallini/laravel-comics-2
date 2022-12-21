@@ -18,10 +18,10 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav">
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a class="nav-link my_link {{ Route::currentRouteName() == 'contacts' ? 'active' : '' }}"
                                 href="{{ route('contacts') }}">Contacts </a>
-                        </li>
+                        </li> --}}
                         <li class="nav-item">
                             <a class="nav-link my_link {{ Route::currentRouteName() == 'home' ? 'active' : '' }}"
                                 href="{{ route('home') }}">Home</a>

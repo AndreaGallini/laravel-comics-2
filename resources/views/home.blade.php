@@ -1,5 +1,5 @@
-@extends('Layouts.app')
-{{-- @section('title', 'DC_Home') --}}
+@extends('layouts.app')
+
 
 @section('content')
     <main>
